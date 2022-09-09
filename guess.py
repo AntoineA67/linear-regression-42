@@ -11,6 +11,7 @@ def main():
 
 	# Read thetas from file or use default value
 	thetas = DEFAULT_THETAS
+	min_x, max_x = 0, 1
 	try:
 		data = pd.read_csv(MODEL_FILE_PATH, header=None).to_numpy()[0]
 		thetas = data[:2]
